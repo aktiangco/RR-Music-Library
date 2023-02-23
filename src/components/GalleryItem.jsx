@@ -5,7 +5,10 @@ const GalleryItem = (props) => {
 
     return (
         <div onClick={() => setView(!view)} style={{'display': 'inline-block'}}>
-            <p>One Gallery Item</p>
+            
+            <p>Title</p>
+            <p>Artist</p>
+            <p>Release Date</p>
         </div>
     )
 }

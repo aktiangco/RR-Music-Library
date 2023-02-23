@@ -24,9 +24,10 @@ const App = () => {
 
     return (
         <div>
-            <SearchBar />
             {message}
-            <Gallery />
+        <SearchBar setSearch={setSearch} />
+        
+        <Gallery data={data} />
         </div>
     )
 }
