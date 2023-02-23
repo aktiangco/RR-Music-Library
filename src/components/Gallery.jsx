@@ -1,6 +1,6 @@
 import GalleryItem from './GalleryItem'
 
-function Gallery(props){
+const Gallery = (props) => {
     return (
         <div>
             <GalleryItem />

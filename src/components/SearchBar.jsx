@@ -1,11 +1,16 @@
 import { useState } from 'react'
  
-function SearchBar(props) {
+const SearchBar = (props) => {
     let [searchTerm, setSearchTerm] = useState('')
     return (
-        <form>
-            <input type="text" placeholder="Enter a search term here" />
-            <input type="submit" />
+        <form className="search-form">
+            <input
+                type="text"
+                placeholder="Enter a search term here"
+            />
+            <input 
+                type="submit" 
+            />
         </form>
     )
 }
