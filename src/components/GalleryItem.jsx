@@ -7,12 +7,14 @@ function GalleryItem(props){
         'width': '25vw',
         'height': '20vh',
         'border': '1px solid black',
-        'margin': '2px'
+        'margin': '2px',
+        'text-align': 'center',
+        'justify-content': 'center'
     }
     
     const detailStyle = {
-        'width': '80vw',
-        'height': '20vh',
+        'width': '250px',
+        'height': '250px',
         'border': '1px solid black',
         'margin': '2px',
         'backgroundImage': `url(${props.item.artworkUrl100})`,
@@ -42,7 +44,7 @@ function GalleryItem(props){
     }
 
     return (
-        <div onClick={() =>setView(!view)} style={{'display': 'inline-block'}}>
+        <div onClick={() =>setView(!view)} style={{'display': 'inline-block', 'justify-content': 'center', 'text-align': 'center'}}>
             <p>One Gallery Item</p>
                 {view ? detailView() : simpleView()}
         </div>
