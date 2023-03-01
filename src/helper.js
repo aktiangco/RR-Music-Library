@@ -1,6 +1,7 @@
 // method that wraps the return of our API call and emits a status to inform Suspense as to what part of the life cycle our data.
-
+// API
 const API_URL = `https://itunes.apple.com/search?term=`
+// Fetching API
 const fetchSearch = async (searchTerm) => {
     const response = await fetch(API_URL + searchTerm)
     const resData = await response.json()
