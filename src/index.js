@@ -11,7 +11,7 @@ import reportWebVitals from './reportWebVitals';
 //   </React.StrictMode>
 // );
 
-// Allaw our App to utilize Suspense
+// Allow our App to utilize Suspense
 // Enabling Concurrent Mode
 ReactDOM.createRoot(document.getElementById('root')).render(<App/>)
 

@@ -7,6 +7,7 @@ import { SearchContext } from './context/SearchContext'
 import AlbumView from './components/AlbumView'
 import ArtistView from './components/ArtistView'
 
+
 function App(){
 	let [message, setMessage] = useState('Search for Music!')
 	let [data, setData] = useState([])
