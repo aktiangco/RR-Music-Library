@@ -2,7 +2,7 @@
 // import { DataContext } from '../context/DataContext'
 import GalleryItem from './GalleryItem'
 
-function Gallery(props){
+const Gallery = (props) => {
     // const data = useContext(DataContext)
 
     // with suspense

@@ -3,6 +3,7 @@ import { useState, Suspense, useEffect } from 'react'
 import Gallery from './components/Gallery'
 import SearchBar from './components/SearchBar'
 import { createResource as fetchData } from './helper'
+import Spinner from './components/Spinner';
 
 function App() {
   let [searchTerm, setSearchTerm] = useState('')
@@ -25,7 +26,7 @@ function App() {
   const renderGallery = () => {
     if(data){
       return (
-        <Suspense>
+        <Suspense fallback={<Spinner />}>
           <Gallery data={data} />
         </Suspense>
       )
