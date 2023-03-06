@@ -62,7 +62,7 @@ function GalleryItem(props){
     }
 
     return (
-        <div onClick={() =>setView(!view)} style={{'display': 'inline-block', 'justify-content': 'center', 'text-align': 'center'}}>
+        <div onClick={() =>setView(!view)} style={{'display': 'inline-block', 'justifyContent': 'center', 'textAlign': 'center'}}>
             <p>One Gallery Item</p>
                 {view ? detailView() : simpleView()}
         </div>
